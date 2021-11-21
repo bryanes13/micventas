@@ -4,7 +4,9 @@ from django.db import models
 
 class Ventas(models.Model):
     codigo_venta=models.IntegerField(primary_key=True)
-    cedula_cliente=models.IntegerField()
+    nombre_cliente=models.CharField(max_length=255, null=True)
     nitproveedor=models.IntegerField()
+    consecutivo=models.IntegerField()
     nombre_producto=models.CharField(max_length=255)
     cantidad_producto=models.IntegerField()
+    precio_producto=models.IntegerField()

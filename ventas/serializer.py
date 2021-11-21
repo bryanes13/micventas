@@ -4,4 +4,4 @@ from .models import *
 class VentasSerializers(serializers.ModelSerializer):
     class Meta:
         model = Ventas
-        fields = ['codigo_venta', 'cedula_cliente','nitproveedor', 'nombre_producto', 'cantidad_producto']
+        fields = ['codigo_venta', 'nombre_cliente','consecutivo','nitproveedor', 'nombre_producto', 'cantidad_producto', 'precio_producto']
