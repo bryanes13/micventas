@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'micventas.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'ventas',
+        'NAME': 'db_ventas',
         'HOST' : '127.0.0.1',
         'PORT' : '27017',
     }

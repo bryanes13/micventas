@@ -7,3 +7,4 @@ from .serializer import *
 class VentasViewSet(viewsets.ModelViewSet):
     queryset = Ventas.objects.all()
     serializer_class = VentasSerializers
+
